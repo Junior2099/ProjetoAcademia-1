@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Academia - Planos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .plans-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .plan {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            text-align: center;
+        }
+        .plan h3 {
+            color: #333;
+        }
+        .plan .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .plan ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .plan button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #log{
+            position: absolute;
+            width: 100px;
+            box-shadow: 10px 5px 5px rgb(158, 158, 158);
+            position: absolute;
+            top: 35px;
+            right: 32px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FitLife Academia</h1> <br> <img id="log"src="/assets/log.jpg"> 
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./aula.html">Aulas</a></li>
+            <li><a href="./planos.html">Planos</a></li>
+            <li><a href="./registro.html">Cadastre-se</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nossos Planos</h2>
+        <div class="plans-container">
+            <div class="plan">
+                <h3>Plano Básico</h3>
+                <p class="price">R$ 79,90/mês</p>
+                <ul>
+                    <li>Acesso à área de musculação</li>
+                    <li>Horário comercial</li>
+                    <li>Avaliação física mensal</li>
+                </ul>
+                <button>Escolher Plano</button>
+            </div>
+            <div class="plan">
+                <h3>Plano Premium</h3>
+                <p class="price">R$ 129,90/mês</p>
+                <ul>
+                    <li>Acesso total à academia</li>
+                    <li>Aulas em grupo inclusas</li>
+                    <li>Horário estendido</li>
+                    <li>Avaliação física quinzenal</li>
+                    <li>1 sessão de personal trainer/mês</li>
+                </ul>
+                <button>Escolher Plano</button>
+            </div>
+            <div class="plan">
+                <h3>Plano Família</h3>
+                <p class="price">R$ 199,90/mês</p>
+                <ul>
+                    <li>Todos os benefícios do Plano Premium</li>
+                    <li>Válido para até 3 membros da família</li>
+                    <li>Desconto em aulas extras</li>
+                    <li>Acesso à área infantil</li>
+                </ul>
+                <button>Escolher Plano</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 FitLife Academia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
